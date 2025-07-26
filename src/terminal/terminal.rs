@@ -233,7 +233,8 @@ where
         Ok(())
     }
 
-    fn set_viewport_area(&mut self, area: Rect) {
+    /// Sets the viewport area.
+    pub fn set_viewport_area(&mut self, area: Rect) {
         self.buffers[self.current].resize(area);
         self.buffers[1 - self.current].resize(area);
         self.viewport_area = area;
