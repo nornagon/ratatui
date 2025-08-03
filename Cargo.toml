@@ -40,7 +40,7 @@ time = { version = "0.3.11", optional = true, features = ["local-offset"] }
 unicode-segmentation = "1.10"
 unicode-truncate = "1"
 # See <https://github.com/ratatui/ratatui/issues/1271> for information about why we pin unicode-width
-unicode-width = "=0.2.0"
+unicode-width = "=0.2.1"
 
 [target.'cfg(not(windows))'.dependencies]
 # termion is not supported on Windows
